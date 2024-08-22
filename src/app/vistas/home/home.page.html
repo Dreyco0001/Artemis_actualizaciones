@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio sesion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  
+  <ion-card id="conten">
+    <ion-card-header>Login de usuario</ion-card-header>
+    <ion-card-content>
+
+      <ion-input type="email" label="Correo" labelPlacement="stacked" fill="outline"></ion-input>
+      <br>
+      <ion-input type="password" label="Password" labelPlacement="stacked" fill="outline"></ion-input>
+      <br>
+
+      <ion-button size="block" color="primary">INGRESAR</ion-button>
+      <br>
+      <p id="ID_P_registro">no tienes cuenta?, regístrate <a routerLink="/registro">AQUI</a> </p>
+    </ion-card-content>
+    
+  </ion-card>
+  
+</ion-content>

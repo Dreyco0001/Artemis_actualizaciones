@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- el ion-grid es para poder hacer filas como con otros programas -->
+  <ion-grid>
+    <!-- y el row para poder hacer columnas a gusto se pueden unn maximo de 12 -->
+    <ion-row>
+      
+      <ion-col>
+        <ion-card>
+
+          <form>
+            <br>
+            <ion-input type="text" label="Rut" labelPlacement="stacked" fill="outline"></ion-input>
+            <ion-input type="text" label="Nombre" labelPlacement="stacked" fill="outline"></ion-input>
+            <ion-input type="date" label="Fecha" labelPlacement="stacked" fill="outline"></ion-input>
+            <ion-select label="Género" labelPlacement="stacked">
+              <ion-select-option value="masculino">Masculino</ion-select-option>
+              <ion-select-option value="femenino">Femenino</ion-select-option>
+              <ion-select-option value="No me identifico">NO me identifico</ion-select-option>
+            </ion-select>
+            <ion-input type="text" label="ingrese numero celular" labelPlacement="stacked" fill="outline" ></ion-input>
+            <ion-input type="text" label="Ingrese contraseña" labelPlacement="stacked" fill="outline"></ion-input>
+            <ion-input type="text" label="Vuelva a ingresar contraseña" labelPlacement="stacked" fill="outline"></ion-input>
+            <br>
+            <ion-button size="block" color="warning">REGISTRAR</ion-button>
+
+          </form>
+
+        </ion-card>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

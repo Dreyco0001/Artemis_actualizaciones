@@ -7,6 +7,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.conten{
+  display: flex;
+  margin: 2px;
+  padding: 2px;
+  justify-content: center;
+  align-items: center;
+}
 
 #container strong {
   font-size: 20px;
@@ -24,4 +31,8 @@
 
 #container a {
   text-decoration: none;
+}
+.ID_P_registro{
+ 
+  left: 20%;
 }
