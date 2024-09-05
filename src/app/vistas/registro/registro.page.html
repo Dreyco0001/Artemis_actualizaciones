@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>registro</ion-title>
+    <ion-title slot="end">registro</ion-title>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -13,8 +13,8 @@
   <ion-grid>
     <!-- y el row para poder hacer columnas a gusto se pueden unn maximo de 12 -->
     <ion-row>
-      
-      <ion-col>
+      <ion-col size="2"></ion-col>
+      <ion-col size="8">
         <ion-card>
 
           <form [formGroup]="persona" (ngSubmit)="registrar()">
@@ -40,7 +40,7 @@
 
         </ion-card>
       </ion-col>
-      
+      <ion-col size="2"></ion-col>
     </ion-row>
   </ion-grid>
 
