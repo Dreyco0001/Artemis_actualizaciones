@@ -31,8 +31,13 @@
             <ion-input type="text" label="Ingrese contraseña" labelPlacement="stacked" fill="outline"></ion-input>
             <ion-input type="text" label="Vuelva a ingresar contraseña" labelPlacement="stacked" fill="outline"></ion-input>
             <br> -->
-            <ion-button type="submit" size="block" color="warning">REGISTRAR</ion-button>
-
+            <ion-row>
+              <ion-col size="2"></ion-col>
+              <ion-col size="6">
+              <ion-button size="small" type="submit" size="block" color="warning">REGISTRAR</ion-button>
+            </ion-col>
+              <ion-col size="4"></ion-col>
+            </ion-row>
           </form>
           <!-- testeo unicamente -->
           <p>{{persona.value | json}}</p>
