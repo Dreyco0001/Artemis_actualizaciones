@@ -1,27 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Inicio sesion
+    <ion-title slot="end">
+      home Artemis
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content >
   
-  <ion-card id="conten">
-    <ion-card-header>Login de usuario</ion-card-header>
-    <ion-card-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="reservas">
+        <ion-icon name="car-sport-sharp"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="administrar">
+        <ion-icon name="id-card-sharp"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="perfil">
+        <ion-icon name="person-circle-sharp"></ion-icon>
+      </ion-tab-button>
 
-      <ion-input type="email" label="Correo" labelPlacement="stacked" fill="outline"></ion-input>
-      <br>
-      <ion-input type="password" label="Password" labelPlacement="stacked" fill="outline"></ion-input>
-      <br>
-
-      <ion-button size="block" color="primary">INGRESAR</ion-button>
-      <br>
-      <p id="ID_P_registro">no tienes cuenta?, regístrate <a routerLink="/registro">AQUI</a> </p>
-    </ion-card-content>
-    
-  </ion-card>
+    </ion-tab-bar>
+  </ion-tabs>
   
 </ion-content>
